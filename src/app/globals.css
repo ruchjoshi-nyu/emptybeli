@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 33 33% 98%; /* Creamy Off-white */
+    --foreground: 222 17% 20%; /* Dark Charcoal */
+    --card: 33 33% 98%;
+    --card-foreground: 222 17% 20%;
+    --popover: 33 33% 98%;
+    --popover-foreground: 222 17% 20%;
+    --primary: 155 30% 25%; /* Deep Green */
+    --primary-foreground: 155 30% 95%;
+    --secondary: 155 20% 45%; /* Muted Green */
+    --secondary-foreground: 155 30% 95%;
+    --muted: 155 15% 88%;
+    --muted-foreground: 155 10% 45%;
+    --accent: 155 25% 35%; /* Slightly brighter green */
+    --accent-foreground: 155 30% 95%;
+    --destructive: 0 72% 51%; /* Softer Red */
+    --destructive-foreground: 0 0% 98%;
+    --border: 155 10% 80%;
+    --input: 155 10% 80%;
+    --ring: 155 30% 25%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222 17% 15%; /* Darker background for dark mode */
+    --foreground: 33 33% 98%;
+    --card: 222 17% 20%;
+    --card-foreground: 33 33% 98%;
+    --popover: 222 17% 20%;
+    --popover-foreground: 33 33% 98%;
+    --primary: 155 30% 35%; /* A slightly lighter green for dark mode contrast */
+    --primary-foreground: 155 30% 95%;
+    --secondary: 155 20% 45%;
+    --secondary-foreground: 155 30% 95%;
+    --muted: 222 17% 25%;
+    --muted-foreground: 155 10% 65%;
+    --accent: 155 30% 35%;
+    --accent-foreground: 155 30% 95%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 222 17% 25%;
+    --input: 222 17% 25%;
+    --ring: 155 30% 35%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
